@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  @@include('@@webRoot/_include/_head.html')
+</head>
+
+<body>
+  <div id="wrap">
+    @@include('@@webRoot/_include/_header.html')
+    <div class="content">
+      @@include('@@webRoot/_include/_aside.html')
+      <div class="sub-content">
+        <div class="content-title">My Information</div>
+        <div class="dashboard-top">
+          <div class="d-flex align-items-center gap-40">
+            <div class="d-flex align-items-center gap-2">
+              <img src="@@webRoot/assets/images/hsbc-logo.svg" alt="hsbc로고">
+              <p class="sitemanager">sitemanager</p>
+            </div>
+            <div class="btn-group m-0">
+              <button type="button" class="btn btn-sm btn-white">HSBC</button>
+              <button type="button" class="btn btn-sm btn-white">Site Operations Team</button>
+              <button type="button" class="btn btn-sm btn-white">Site Manager</button>
+            </div>
+          </div>
+          <!-- 접속자 카운트 -->
+          <div class="data-list">
+            <div class="data-box">
+              <p class="title">Login Count</p>
+              <p class="count">64</p>
+            </div>
+            <div class="data-box">
+              <p class="title">Last Connetion Date</p>
+              <p class="count">2024.09.23</p>
+            </div>
+            <div class="data-box">
+              <p class="title">Permission Group Name</p>
+              <p class="count">Site Master</p>
+            </div>
+            <div class="data-box">
+              <p class="title">Additional permissions</p>
+              <p class="count">None</p>
+            </div>
+          </div>
+          <!-- 접속자 카운트 // -->
+
+        </div>
+        <!-- favorites -->
+        <div class="favorites-wrap">
+          <div class="favorites-head">
+            Favorites
+          </div>
+          <div class="favorites-content">
+            <div class="favorites-box">
+              <div class="img"><img src="@@webRoot/assets/images/icon-favorites-1.svg" alt=""></div>
+              <p class="desc">Application<br>
+                From-Request</p>
+            </div>
+            <div class="favorites-box">
+              <div class="img"><img src="@@webRoot/assets/images/icon-favorites-2.svg" alt=""></div>
+              <p class="desc">Leave Schedule<br>
+                -Schedule</p>
+            </div>
+            <div class="favorites-box">
+              <div class="img"><img src="@@webRoot/assets/images/icon-favorites-3.svg" alt=""></div>
+              <p class="desc">Approve-Employee</p>
+            </div>
+            <div class="favorites-box">
+              <div class="img"><img src="@@webRoot/assets/images/icon-favorites-4.svg" alt=""></div>
+              <p class="desc">Report-Calendar</p>
+            </div>
+            <div class="favorites-box">
+              <div class="img"><img src="@@webRoot/assets/images/icon-favorites-5.svg" alt=""></div>
+              <p class="desc">Pregnant Woman</p>
+            </div>
+            <div class="favorites-box">
+              <div class="img"><img src="@@webRoot/assets/images/icon-favorites-6.svg" alt=""></div>
+              <p class="desc">Report-Application</p>
+            </div>
+            <div class="favorites-box">
+              <div class="img"><img src="@@webRoot/assets/images/icon-favorites-7.svg" alt=""></div>
+              <p class="desc">Daily Report</p>
+            </div>
+            <div class="favorites-box">
+              <div class="img"><img src="@@webRoot/assets/images/icon-favorites-8.svg" alt=""></div>
+              <p class="desc">Working Hours-New </p>
+            </div>
+          </div>
+        </div>
+        <!-- favorites //-->
+        <!-- menulist -->
+        <div class="menulist-wrap">
+          <div class="menulist-head">
+            My Menu List
+          </div>
+          <div class="table-wrap">
+            <table class="table">
+              <colgroup>
+                <col style="width: 15%" />
+                <col style="width: 15%" />
+                <col style="width: 65%" />
+                <col style="width: 5%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">Business</th>
+                  <th scope="col">App Name</th>
+                  <th scope="col">Menu Name</th>
+                  <th scope="col">Favorite</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td> HR</td>
+                  <td>SEL LOS</td>
+                  <td>Application From - Request</td>
+                  <td><button>별</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        @@include('@@webRoot/_include/_footer.html')
+      </div>
+    </div>
+  </div>
+  @@include('@@webRoot/_include/_modal.html')
+</body>
+
+</html>

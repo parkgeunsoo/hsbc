@@ -1,0 +1,59 @@
+.table-wrap {
+  border: solid 1px #ebebeb;
+  border-radius: 8px;
+}
+.table-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: #111;
+  margin-top: 33px;
+}
+.table {
+  width: 100%;
+  table-layout: fixed;
+  .table-scroll {
+    overflow: auto;
+  }
+  thead {
+    th {
+      font-size: 14px;
+      line-height: normal;
+      padding: 15px 30px 14px;
+      font-weight: 500;
+      background-color: #e4e5e7;
+    }
+  }
+  tbody {
+    tr {
+      td {
+        padding: 15px 30px 14px;
+        font-size: 14px;
+        line-height: normal;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        border-top: 1px solid #f3f3f3;
+        background-color: #fff;
+      }
+    }
+  }
+}
+.table-scroll {
+  height: 250px;
+  overflow: auto;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+}
+.backslash {
+  text-align: left;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="0" x2="100%" y2="100%" stroke="%23ebebeb" /></svg>');
+  div {
+    text-align: right;
+  }
+  span {
+    display: inline-block;
+    margin-top: 4px;
+  }
+}

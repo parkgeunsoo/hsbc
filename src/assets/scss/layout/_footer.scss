@@ -1,0 +1,46 @@
+footer {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  padding: 30px 80px;
+  .img {
+    margin-bottom: 12px;
+  }
+  .company-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    p {
+      font-size: 12px;
+      color: #666;
+      line-height: 18px;
+    }
+  }
+  .copyright {
+    font-size: 12px;
+    color: #666;
+    line-height: 18px;
+  }
+}
+
+.intro {
+  .footer {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.top-btn{
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  display: none;
+  &:hover{
+    transition: .5s;
+    .icon-top{
+      background-image: url("../images/top-btn-hover.png");
+    }
+  }
+}

@@ -1,0 +1,37 @@
+$black: #252525;
+$body: #fff;
+$primary: #db0011;
+$border-color: #e6e8ea;
+$white: #fff;
+$green: #009881;
+$gray-9: #999;
+
+.type-2 {
+  --primary: blue;
+}
+
+$theme-colors: (
+  "primary": $primary,
+) !default;
+
+$font-family-base: "Pretendard";
+$body-color: $body;
+$body-font-color: $black;
+
+$grid-gutter-width: 2rem !default;
+
+$header-height: 60px;
+$header-height-lg: 80px;
+$header-z-index: 99;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1220px,
+) !default;
+
+$container-max-width: 1220px;
+
+$modal-content-bg: $body !default;

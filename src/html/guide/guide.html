@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>HSBC</title>
+    @@include('@@webRoot/_include/_head.html')
+    <style>
+        body {
+            background: #fff;
+            min-width: 1900px;
+            min-height: 100dvh;
+        }
+
+        .container {
+            max-width: 99%;
+            margin: 0 auto;
+        }
+
+        section {
+            border-bottom: 1px solid #e8e8e8;
+            padding: 1.5rem;
+            flex: 0 0 100%;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #df1f1f;
+        }
+
+        .group {
+            display: flex;
+            gap: 20px;
+        }
+
+        .btns button {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        @media screen and (max-width: 992px) {
+            .container {
+                display: block;
+            }
+
+            section {
+                flex: 0 0 100%;
+                width: 100%;
+            }
+        }
+
+        .layout {
+            display: flex;
+            gap: 100px;
+        }
+
+        .layout>div {}
+
+        .title {
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 60px;
+            border-bottom: 1px solid #e1e6ef;
+            padding-bottom: 30px;
+        }
+
+        .sub-title {
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .flex {
+            display: flex;
+            gap: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section>
+            <h1 class="mb-3" style="font-size: 60px;">Bttton</h1>
+            <div class="layout">
+                <div class="">
+                    <div class="title">Size</div>
+                    <div style="margin-bottom: 50px;">
+                        <button type="button" class="btn btn-min btn-auto btn-green btn-lg">Button</button>
+                    </div>
+                    <div style="margin-bottom: 50px;">
+                        <button type="button" class="btn btn-min btn-auto btn-green btn-md">Button</button>
+                    </div>
+                    <div style="margin-bottom: 50px;">
+                        <button type="button" class="btn btn-min btn-auto btn-green btn-sm">Button</button>
+                    </div>
+                    <div style="margin-bottom: 50px;">
+                        <button type="button" class="btn btn-min btn-auto btn-green btn-etc">Button</button>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="title">Type</div>
+                    <div class="flex">
+                        <div style="margin-bottom: 50px;">
+                            <p class="sub-title">Text Only(Default)</p>
+                            <button type="button" class="btn btn-min btn-auto btn-green btn-sm">Button</button>
+                        </div>
+                        <div style="margin-bottom: 50px;">
+                            <p class="sub-title">Text + Icon</p>
+                            <button type="button" class="btn btn-min btn-auto btn-excel btn-sm"><i class="icon-download-active"></i> Button</button>
+                        </div>
+                        <div style="margin-bottom: 50px;">
+                            <p class="sub-title">Icon Only</p>
+                            <button type="button" class="btns-sign"><i class="icon-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div style="margin-bottom: 50px;">
+                            <p class="sub-title">Fixed Width</p>
+                            <div style="display:flex; gap:10px;">
+                                <button type="button" class="btn fixed-width btn-green btn-sm">Button</button>
+                                <button type="button" class="btn fixed-width btn-dark btn-sm">Button</button>
+                                <button type="button" class="btn fixed-width btn-outline-gray btn-sm">Button</button>
+                                <button type="button" class="btn fixed-width btn-gray btn-sm">Button</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div style="margin-bottom: 50px;">
+                            <p class="sub-title">Flexible Width Padding:15</p>
+                            <div style="display:flex; gap:10px;">
+                                <button type="button" class="btn fixed-width-padding btn-green btn-sm">Button</button>
+                                <button type="button" class="btn fixed-width-padding btn-excel btn-sm w-auto d-flex align-items-center gap-2"><i class="icon-download-active"></i> Button</button>
+                                <button type="button" class="btn fixed-width-padding btn-blue btn-sm">btn</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="title">Styles</div>
+                    <div class="flex">
+                        <div style="margin-bottom: 50px;">
+                            <p class="sub-title">Contained</p>
+                            <div style="display:flex; gap:10px;">
+                                <button type="button" class="btn btn-min btn-auto btn-green btn-sm">Button</button>
+                                <button type="button" class="btn btn-min btn-auto btn-dark btn-sm">Button</button>
+                                <button type="button" class="btn btn-min btn-auto btn-light-green btn-sm">Button</button>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 50px;">
+                            <p class="sub-title">Outline</p>
+                            <div style="display:flex; gap:10px;">
+                                <button type="button" class="btn btn-min btn-auto btn-outline-green btn-sm">Button</button>
+                                <button type="button" class="btn btn-min btn-auto btn-outline-dark btn-sm">Button</button>
+                                <button type="button" class="btn btn-outline-green btn-auto btn-sm search-btn"><i class="icon-search"></i> 검색</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div style="margin-bottom: 50px;">
+                            <p class="sub-title">Icon</p>
+                            <div style="display:flex; gap:10px;">
+                                <button type="button" class="btns-sign"><i class="icon-plus"></i></button>
+                                <button type="button" class="btns-sign"><i class="icon-minus"></i></button>
+                                <button type="button" class="list-btn edit-btn"><i class="icon-edit"></i></button>
+                                <button type="button" class="btns-sign"><i class="icon-recyclebin-bk"></i></button>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 50px;">
+                            <p class="sub-title">Text Buttons with Icon</p>
+                            <a href="" class="intro-link-btn">개발사이트 <i class="icon-intro-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div style="margin-bottom: 50px;">
+                            <p class="sub-title">Search </p>
+                            <div style="display:flex; gap:10px;">
+                                <!-- 필터 버튼은 filler 안에서 쓸땐 style뺀다 -->
+                                <div class="filter-flex justify-content-center">
+                                    <button type="button" class="btn btn-outline-green btn-auto search-btn" style="width: 108px; height: 100px;"><i class="icon-search"></i> 검색</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 50px;">
+                            <p class="sub-title">Portal Main</p>
+                            <div class="portal">
+                                <button type="button" class="btn btn-outline-green">바로가기</button>
+                                <button type="button" class="btn btn-outline-green sm-radius">바로가기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div style="margin-bottom: 50px;">
+                            <p class="sub-title">Split Button </p>
+                            <div style="display:flex; gap:10px;">
+                                <div class="custom-select" style="width: 160px">
+                                    <select name="" id="" class="form-select">
+                                        <option value="">Text</option>
+                                        <option value="">-</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 50px;">
+                            <p class="sub-title">Toggle Button</p>
+                            <div class="custom-radio">
+                                <input type="radio" id="radio1" name="radioGroup" checked="">
+                                <label for="radio1">사용</label>
+                                <input type="radio" id="radio2" name="radioGroup">
+                                <label for="radio2">사용안함</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h1 class="mb-3">Form</h1>
+            <div class="exe-input" style="width: 440px">
+                <input type="text" class="form-control" placeholder="" value="" />
+                <p class="exe-txt"><span>0</span><span>/25</span></p>
+            </div>
+            <div class="mt-3">
+                <input type="text" class="form-control" value="영상데이터에서 보유한 메타정보 (촬영위치/촬영기기정보/촬영일시/해상도 등등)" disabled />
+            </div>
+            <div class="mt-3">
+                <input type="text" class="form-control" value="" />
+            </div>
+            <div class="mt-3">
+                <div class="form-file-custom">
+                    <p id="selectedFile" class="file-name" style="width: 350px">파일을 첨부해주세요.</p>
+                    <label for="fileInput" id="fileLabel">찾아보기</label>
+                    <input type="file" id="fileInput" style="display: none" />
+                </div>
+            </div>
+            <div class="mt-3">
+                <input type="text" class="form-control" placeholder="YYYY-MM-DD" data-picker="date" style="width: 160px" />
+            </div>
+            <div class="mt-3">
+                <div class="input-grid">
+                    <div class="email-wrap">
+                        <input type="text" class="form-control" placeholder="이메일아이디" value="asdasdsa" style="width: 135px;" />
+                        <span>@</span>
+                        <input type="text" class="form-control" placeholder="" value="naver" style="width: 135px;" />
+                    </div>
+                    <div class="custom-select" style="width: 135px">
+                        <select name="" id="" class="form-select">
+                            <option value="">naver</option>
+                            <option value="">gmail</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1 class="mb-3">Checkbox button groups</h1>
+            <div class="row gx-2 gy-2 mb-2">
+                <div class="">
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="capacity" id="btncheck1" autocomplete="off" />
+                        <label class="form-check-label" for="btncheck1">테스트</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="capacity" id="btncheck2" autocomplete="off" />
+                        <label class="form-check-label" for="btncheck2">테스트</label>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="form-check-inline">
+                        <input type="radio" class="form-check-input" name="capacity" id="btncheck1" autocomplete="off" />
+                        <label class="form-check-label" for="btncheck1">테스트</label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input type="radio" class="form-check-input" name="capacity" id="btncheck2" autocomplete="off" />
+                        <label class="form-check-label" for="btncheck2">테스트</label>
+                    </div>
+                </div>
+                <ul class="scroll-bar list">
+                    <li>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="chx1" autocomplete="off" />
+                            <label class="form-check-label" for="chx1">운영포탈시스템</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="chx2" autocomplete="off" />
+                            <label class="form-check-label" for="chx2">2D 관리</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="chx3" autocomplete="off" />
+                            <label class="form-check-label" for="chx3">디지털트윈관리</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="chx4" name="" autocomplete="off" />
+                            <label class="form-check-label" for="chx4">데이터 관리</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="chx5" autocomplete="off" />
+                            <label class="form-check-label" for="chx5">인프라 관리자</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h1 class="mb-3">Select</h1>
+            <div class="mt-5">
+                <div class="custom-select" style="width: 160px">
+                    <select name="" id="" class="form-select">
+                        <option value="">시군구 선택</option>
+                        <option value="">분류</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <h1 class="mb-3">Pagination</h1>
+            <div class="mt-5">
+                <nav>
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="First">
+                                <i class="icon-pagination-left-twin"></i>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <i class="icon-pagination-left"></i>
+                            </a>
+                        </li>
+                        <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item">
+                            <a class="page-link active" href="#" aria-label="Next">
+                                <i class="icon-pagination-right"></i>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link active" href="#" aria-label="Last">
+                                <i class="icon-pagination-right-twin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section>
+            <h1 class="mb-3">Breadcrumb</h1>
+            <div class="mt-5">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="#"><i class="icon-home"></i></a>
+                        </li>
+                        <li class="breadcrumb-item"><a href="#">권한관리</a></li>
+                        <li class="breadcrumb-item"><a href="#">메뉴관리</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">플랫폼API관리</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+    </div>
+    @@include('@@webRoot/_include/_modal.html')
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+@keyframes subVisualScale {
+  from{
+      transform: scale(1.1);
+  }
+  to{
+      transform: scale(1);
+  }
+}
+
+@keyframes subVisualText {
+  0%{
+      opacity: 0;
+      transform: translateY(200px);
+  }
+  25%{
+      opacity: 0;
+      transform: translateY(100px);
+  }
+  100%{
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.content-head {
+  width: 100%; height: 300px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; flex-direction: column;
+  .bg-img {
+    width: 100%; height: 100%; animation: subVisualScale 3s; left: 0; top: 0; position: absolute; z-index: -1;
+    &.newsroom-banner {background: url(../images/newsroom-banner.png) no-repeat center center; background-size: cover; }
+    &.career-banner {background: url(../images/career-banner.png) no-repeat center center; background-size: cover; }
+    &.contact-banner {background: url(../images/contact-banner.png) no-repeat center center; background-size: cover; }
+    &.about-banner {background: url(../images/about-banner.png) no-repeat center center; background-size: cover; }
+    &.whatwedo-banner {background: url(../images/whatwedo-banner.png) no-repeat center center; background-size: cover; }
+    &.policy-banner {background: url(../images/policy-banner.png) no-repeat center center; background-size: cover; }
+  }
+  .title-wrap {
+    text-align: center; width: 100%; color: $white;
+    .title-top {
+      font-size: 20px; animation: subVisualText 2s both 0.25s;
+    }
+    .title {
+      font-size: 38px; font-weight: 700; animation: subVisualText 2s; line-height: normal;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    height: 720px;
+    .title-wrap {
+      .title-top {font-size: 32px;}
+      .title {font-size: 72px;}
+    }
+  }
+}

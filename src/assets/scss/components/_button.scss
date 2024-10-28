@@ -1,0 +1,100 @@
+.btn {
+  width: auto;
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #000;
+  padding: 14px 18px 13px;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  &.btn-auto {
+    width: auto;
+    padding: 0;
+  }
+  &.btn-min {
+    min-width: 80px;
+  }
+  &.btn-lg {
+    padding: 24px 18px;
+  }
+  &.btn-md {
+    padding: 12px 18px;
+  }
+  &.btn-sm {
+    padding: 9px 20px;
+    font-size: 12px;
+  }
+  &.round {
+    border-radius: 60px;
+  }
+  &.min-width {
+    min-width: 140px;
+  }
+  &.btn-green {
+    background-color: $green !important;
+    color: $white !important;
+    border: 1px solid $green !important;
+    &:disabled {
+      background-color: #c9c9c9 !important;
+      border: 1px solid #c9c9c9 !important;
+      color: $white !important;
+    }
+  }
+  &.btn-outline-green {
+    background-color: $white !important;
+    border: 1px solid $green !important;
+    color: $green !important;
+  }
+  &.btn-light-green {
+    background-color: #cdebe7 !important;
+    color: $green !important;
+    border: 1px solid #cdebe7 !important;
+  }
+  &.btn-outline-dark {
+    background-color: $white !important;
+    border: 1px solid #252525 !important;
+    color: #252525 !important;
+  }
+  &.btn-dark {
+    background-color: #252525 !important;
+    border: 1px solid #252525 !important;
+    color: $white !important;
+  }
+  &.btn-white {
+    background-color: #fff !important;
+    border: 1px solid #fff !important;
+    color: #252525 !important;
+  }
+  &.btn-outline-gray {
+    background-color: $white !important;
+    border: 1px solid #ddd !important;
+    color: #252525 !important;
+  }
+  &.btn-blue {
+    background-color: #0d4483 !important;
+    border: 1px solid #0d4483 !important;
+    color: $white !important;
+    &:disabled {
+      background-color: #c9c9c9 !important;
+      border: 1px solid #c9c9c9 !important;
+      color: $white !important;
+    }
+  }
+  &.btn-excel {
+    background-color: #cceae6 !important;
+    border: 1px solid #cceae6 !important;
+    color: #009881 !important;
+  }
+}
+
+.btn-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

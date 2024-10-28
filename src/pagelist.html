@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>(Pagelist) HSBC - ADMIN</title>
+    @@include('@@webRoot/_include/_head.html')
+
+    <style>
+        body {
+            padding: 20px;
+            max-width: 100%;
+            position: relative;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            color: #222;
+            line-height: 1.5em;
+            font-family: 'arial', 'NanumGothic';
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        table {
+            width: 100%;
+            max-width: 1040px;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #b0beec;
+            padding: 2px 10px;
+            word-break: keep-all;
+        }
+
+        table th {
+            background: #2e4dbb;
+            color: #fff;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        table td a {
+            color: rgb(17, 26, 41);
+            text-decoration: none;
+        }
+
+        table td a:hover {
+            text-decoration: underline;
+        }
+
+        table tbody tr:hover {
+            background-color: #dee4fa;
+        }
+
+        .noteTable {
+            display: table;
+            width: 100%;
+        }
+
+        .noteTable .date {
+            display: table-cell;
+            color: #ff523c;
+            width: 40px;
+        }
+
+        .noteTable .note {
+            display: table-cell;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .bg {
+            background: #fff5f5;
+        }
+
+        ul.float {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        ul.float li {
+            list-style: none;
+            border: 1px solid #ccc;
+            padding: 2px 5px;
+            display: inline-block;
+        }
+
+        .end {
+            background: #ffffcc;
+        }
+
+        .ing {
+            background: #f6b1a6;
+        }
+
+        .list {
+            text-align: center;
+            padding: 0 0 20px;
+        }
+
+        .list a {
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .list a:hover {
+            text-decoration: underline;
+        }
+
+        .box {
+            border: 2px dotted #aaa;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .box>ul {
+            display: inline-block;
+            text-align-last: left;
+        }
+
+        .divider {
+            text-align: center;
+            padding: 6px;
+            background: #dcd5f0;
+            font-weight: 700;
+        }
+
+        .btns {
+            width: 100%;
+            max-width: 1040px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+
+        .download-btn {
+            background-color: #222;
+            color: #fff;
+            padding: 6px 12px;
+            border-radius: 4px;
+        }
+
+        .pagemove-btn {
+            background-color: #ffcc66;
+            color: #fff;
+            padding: 6px 12px;
+            border-radius: 4px;
+        }
+
+        .tablenone {
+            padding: 0px;
+            margin: 0px;
+            border-left: hidden;
+            border-right: hidden;
+            border-top: hidden;
+            border-bottom: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <h1></h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Depth 1</th>
+                <th>Depth 2</th>
+                <th>Depth 3</th>
+                <th>File</th>
+                <th>pageLink</th>
+                <th>진행도</th>
+            </tr>
+        </thead>
+        <tbody id="pageList">
+            <!-- <tr>
+                <td></td>
+                <td>에러페이지</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a target="_blank" href="/html/util/error.html">error.html</a></td>
+                <td></td>
+            </tr> -->
+            <!-- <tr>
+                <td></td>
+                <td>modal</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a target="_blank" href="/html/guide/_modal.html">modal.html</a></td>
+                <td></td>
+            </tr> -->
+            <tr>
+                <td></td>
+                <td>main</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a target="_blank" href="/html/main/main.html">main.html</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>로그인</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a target="_blank" href="/html/signup/login.html">login.html</a></td>
+                <td></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <script>
+        var leng = document.querySelectorAll('tbody td a');
+        console.log(leng.length);
+
+        // var rows = document.getElementById("pageList").getElementsByTagName("tr");
+        // console.log(rows.length);
+    </script>
+</body>
+
+</html>

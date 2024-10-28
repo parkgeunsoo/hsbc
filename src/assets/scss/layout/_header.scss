@@ -1,0 +1,125 @@
+#header {
+  border-bottom: 1px solid #f3f3f3;
+  height: 64px;
+  padding: 0 36px 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #fff;
+  .left-content {
+    display: flex;
+    align-items: center;
+    gap: 140px;
+    padding: 20px 0;
+  }
+ 
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+   .last-login{
+      font-size: 14px; 
+      color: #808080;
+    }
+  
+    .fullmenu{
+      .close-icon{
+        display: none;
+      }
+      &.open{
+       .menu-icon{display: none;} 
+      }
+    }
+  }
+  .info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    .profile-img{
+      width: 40px;
+      height: 40px;
+      position: relative;
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+      &.online{
+        &::after{
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          border: 2px solid #fff;
+          background-color: #2AB57C;
+          bottom: 0;
+          right: 0;
+        }
+      }
+    }
+    .user-id{
+      font-size: 14px;
+    }
+  }
+ 
+}
+
+.menu-list-container {
+  display: none;
+  background-color: #fff;
+  padding: 60px 20px;
+  border-top: 1px solid #e5e8eb;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 64px;
+  z-index: 999;
+  .menu-list {
+    display: flex;
+    justify-content: center;
+    gap: 133px;
+    flex-wrap: wrap;
+
+    .menu-group {
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 14px;
+        color: #B3B1B3;
+      }
+
+      ul {
+        li {
+          padding: 12px 0;
+          a {
+            text-decoration: none;
+            color: #252525;
+            font-size: 16px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+.dim-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  @@include('@@webRoot/_include/_head.html')
+</head>
+
+<body>
+  <main class="login">
+    <div class="logo-box">
+      <img src="@@webRoot/assets/images/login_logo.svg" alt="로그인 로고">
+    </div>
+    <div class="login-box">
+      <div class="login-form">
+        <div class="login-heading">
+          <h1>Welcome to Admin</h1>
+        </div>
+        <div class="form">
+          <input type="text" class="form-control form-lg" placeholder="아이디">
+          <div class="password-wrapper">
+            <input type="password" class="form-control form-lg" placeholder="비밀번호" id="password">
+            <img src="@@webRoot/assets/images/icon-eye.svg" alt="Toggle Password" class="toggle-icon"
+              id="togglePassword">
+          </div>
+          <button class="btn btn-lg btn-primary login-btn" type="button">Login</button>
+        </div>
+      </div>
+      <p class="copyright">© Copyright. The Hongkong and Shanghai Banking Corporation Limited 2024</p>
+    </div>
+  </main>
+</body>
+
+</html>

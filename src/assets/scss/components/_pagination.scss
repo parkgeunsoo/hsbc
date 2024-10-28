@@ -1,0 +1,26 @@
+.pagination{
+  display: flex; align-items: center; justify-content: center; margin-top: 30px; gap: 17px;
+}
+.page-link{ 
+  color: #bbb; font-size: 16px; font-weight: 500;
+}
+.page-link.active, .active {
+  >.page-link{
+    border-bottom: 1px solid $green; color: $green;
+  }
+  .icon-pagination-left-twin{
+    background-image: url('../images/icon-pagination-left-twin-active.png');
+    transform: rotate(180deg);
+  }
+  .icon-pagination-left{
+     background-image: url('../images/icon-pagination-left-active.png');
+     transform: rotate(180deg);
+  }
+  .icon-pagination-right-twin{
+     background-image: url('../images/icon-pagination-left-twin-active.png');transform: rotate(0);
+  }
+  .icon-pagination-right{
+    background-image: url('../images/icon-pagination-left-active.png');
+    transform: rotate(0);
+  }
+}

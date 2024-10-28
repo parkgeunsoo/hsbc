@@ -1,0 +1,28 @@
+{
+  "editor.wordWrap": "bounded",
+  "editor.formatOnSave": true,
+  "editor.wordWrapColumn": 400,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.formatOnSave": true
+  },
+  "prettier.printWidth": 8000,
+  "prettier.tabWidth": 2,
+  "prettier.endOfLine": "auto",
+  "[html][javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  }
+}

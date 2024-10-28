@@ -1,0 +1,56 @@
+@mixin ellipsis($width:null) {
+  @if not $width{
+    display:block;
+  }@else{
+    display: inline-block;
+    max-width: $width;
+  }
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+@mixin ellipsis-multiline($font-size, $line-height, $lines-to-show, $height-fix:false) {
+  $height-calc: $font-size*$line-height*$lines-to-show;
+  display: block;
+  display: -webkit-box;
+  font-size: $font-size*1px;
+  line-height: $line-height;
+  max-height: ($line-height * $lines-to-show) * 1em;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  word-break: break-all;
+  height: auto;
+  @if $height-fix{
+    height: ($line-height * $lines-to-show) * 1em;
+  }
+
+  p:not(:first-of-type) {
+    display: none;
+  }
+}
+
+$line-data : 2,3,4,5;
+
+@mixin ellipsis($line){
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  white-space: inherit;
+  -webkit-line-clamp: $line;
+  word-break: break-all;
+}
+
+
+@each $line in $line-data{
+  .ellipsis-#{$line}{
+    @include ellipsis($line)
+  }
+}
