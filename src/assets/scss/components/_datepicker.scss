@@ -98,13 +98,17 @@
   }
 }
 [data-picker="date"] {
-  width: 36px;
-  height: 36px;
-  background-size: 14px 16px;
-  background-image: url("../images/icon-calendar.svg");
+  padding-right: calc($input-btn-padding-x + 25px);
+  background-size: 16px 18px;
+  font-size: 15px;
+  padding: 10px 16px 10px 10px;
   background-repeat: no-repeat;
-  background-position: center;
-  padding: 0;
+  background-position: 88% 50%;
+  background-image: url("../images/icon-calendar.png");
+  &.form-control-sm {
+    background-position: right $input-btn-padding-x-sm top 50%;
+    padding-right: calc($input-btn-padding-x-sm + 20px);
+  }
 }
 [month-data-picker="date"] {
   padding-right: calc($input-btn-padding-x + 25px);

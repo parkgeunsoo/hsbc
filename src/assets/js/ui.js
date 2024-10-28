@@ -61,27 +61,16 @@ var Common = {
     this.datepickerRun();
   },
   select: function () {
-    $(document).ready(function () {
-      // 드롭다운 열고 닫기
-      $(".select-btn").click(function () {
-        $(this).parent().toggleClass("show");
-      });
-    
-      // 옵션 클릭 시 선택 처리
-      $(".select-wrap .optionitem").click(function () {
-        var text = $(this).text();
-        $(this).siblings().removeClass("active");
-        $(this).addClass("active");
-        $(this).parent().siblings(".select-btn").find("span").text(text).css("color", "#333");
-        $(".select-wrap").removeClass("show");
-      });
-    
-      // 옵션 외부 클릭 시 드롭다운 닫기
-      $(document).click(function (e) {
-        if (!$(e.target).closest(".select-wrap").length) {
-          $(".select-wrap").removeClass("show");
-        }
-      });
+    // selectbox 커스텀
+    $(".select-btn").click(function () {
+      $(this).parent().toggleClass("show");
+    });
+
+    $(".select-wrap .optionitem").click(function () {
+      var text = $(this).html();
+      $(this).parent().siblings(".select-btn").find("span").html(text);
+      $(this).parent().siblings(".select-btn").find("span").css("color", "#333");
+      $(".select-wrap").removeClass("show");
     });
   },
   datepickerRun: function () {
@@ -151,14 +140,6 @@ var Common = {
       $(".top-btn").click(function () {
         $("html, body").animate({ scrollTop: 0 }, 400);
         return false;
-      });
-
-      $('#starIcon').on('click', function () {
-        const isActive = $(this).hasClass('active');
-        const newSrc = isActive
-          ? '../../assets/images/icon-star.svg'
-          : '../../assets/images/icon-star-active.svg';
-        $(this).attr('src', newSrc).toggleClass('active');
       });
     });
   },

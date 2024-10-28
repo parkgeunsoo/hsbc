@@ -30,15 +30,12 @@
         padding: 15px 30px 14px;
         font-size: 14px;
         line-height: normal;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         word-break: break-all;
         border-top: 1px solid #f3f3f3;
         background-color: #fff;
-      }
-      &:last-child{
-        td{
-          &:first-child{ border-radius: 0 0 0 8px;}
-          &:last-child{ border-radius: 0 0 8px 0;}
-        }
       }
     }
   }
