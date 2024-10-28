@@ -92,25 +92,54 @@
         <!-- menulist -->
         <div class="menulist-wrap">
           <div class="menulist-head">
-            My Menu List
+            <p>My Menu List</p>
+            <div class="category-menu">
+              <a href="#" class="active">All</a>
+              <span class="bar"></span>
+              <a href="#">HR</a>
+              <span class="bar"></span>
+              <a href="#">OPS</a>
+              <span class="bar"></span>
+              <a href="#">MSS</a>
+              <span class="bar"></span>
+              <a href="#">FIN</a>
+              <span class="bar"></span>
+              <a href="#">Other</a>
+            </div>
           </div>
-          <div class="table-wrap">
+          <div>
             <table class="table">
               <colgroup>
-                <col style="width: 15%" />
-                <col style="width: 15%" />
+                <col style="width: 12%" />
+                <col style="width: 12%" />
                 <col style="width: 65%" />
-                <col style="width: 5%" />
+                <col style="width: 10%" />
               </colgroup>
               <thead>
                 <tr>
                   <th scope="col">Business</th>
                   <th scope="col">App Name</th>
                   <th scope="col">Menu Name</th>
-                  <th scope="col">Favorite</th>
+                  <th scope="col" class="text-center">Favorite</th>
                 </tr>
               </thead>
               <tbody>
+                <tr>
+                  <td>HR</td>
+                  <td>SEL LOS</td>
+                  <td>Application From - Request</td>
+                  <td class="text-center">
+                    <div class="star-toggle">
+                      <img src="@@webRoot/assets/images/icon-star.svg" alt="별 아이콘" class="star-icon" id="starIcon">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td> HR</td>
+                  <td>SEL LOS</td>
+                  <td>Application From - Request</td>
+                  <td><button>별</button></td>
+                </tr>
                 <tr>
                   <td> HR</td>
                   <td>SEL LOS</td>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    @@include('@@webRoot/_include/_head.html')
+</head>
+
+<body>
+    <div id="wrap">
+        @@include('@@webRoot/_include/_header.html')
+        <div class="content">
+            @@include('@@webRoot/_include/_aside.html')
+            <div class="sub-content">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="content-title">My Information</div>
+                    <div class="d-flex align-items-center gap-2">
+                        <input type="text" class="form-control" data-picker="date" />
+                        <div class="custom-select">
+                            <select name="" id="" class="form-select" style="width: 102px">
+                                <option value="">Che/App</option>
+                            </select>
+                        </div>
+                        <div class="custom-select">
+                            <select name="" id="" class="form-select" style="width: 240px">
+                                <option value="">Park Kyoung Lark</option>
+                            </select>
+                        </div>
+                        <!-- <div class="select-wrap">
+                            <div class="select-btn">
+                                <span>선택하세요</span>
+                                <div class="icon-select-arrow"></div>
+                            </div>
+                            <div class="optionlist">
+                                <div class="optionitem">Che/App</div>
+                                <div class="optionitem">Che/App</div>
+                                <div class="optionitem">Che/App</div>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+                <div>
+                    <table class="table">
+                        <colgroup>
+                            <col style="width: 6%" />
+                            <col style="width: 10%" />
+                            <col style="width: 8%" />
+                            <col style="width: 13%" />
+                            <col style="width: 20%" />
+                            <col style="width: 30%" />
+                            <col style="width: 15%" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <label class="form-check-label m-0"> <input type="checkbox" class="form-check-input"
+                                            name="" autocomplete="off" /></label>
+                                </th>
+                                <th scope="col">Sequence</th>
+                                <th scope="col">Level</th>
+                                <th scope="col">Menu Code</th>
+                                <th scope="col">Menu Name</th>
+                                <th scope="col">URL</th>
+                                <th scope="col" class="text-center">Management</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">
+                                    <label class="form-check-label m-0">
+                                        <input type="checkbox" class="form-check-input" name="" autocomplete="off" />
+                                    </label>
+                                </td>
+                                <td>102</td>
+                                <td>1</td>
+                                <td>F_SiteManager</td>
+                                <td>Membership Management</td>
+                                <td>/content/ operation/member/list</td>
+                                <td>
+                                    <div class="btn-group m-0">
+                                        <button type="button" class="btn btn-sm">Modify</button>
+                                        <button type="button" class="btn btn-sm">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    <label class="form-check-label m-0">
+                                        <input type="checkbox" class="form-check-input" name="" autocomplete="off" />
+                                    </label>
+                                </td>
+                                <td>101</td>
+                                <td>0</td>
+                                <td>F_SiteManager</td>
+                                <td>
+
+                                </td>
+                                <td>Folder</td>
+                                <td>
+                                    <div class="btn-group m-0">
+                                        <button type="button" class="btn btn-sm">Modify</button>
+                                        <button type="button" class="btn btn-sm">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    @@include('@@webRoot/_include/_footer.html')
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('@@webRoot/_include/_modal.html')
+</body>
+
+</html>
